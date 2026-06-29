@@ -35,9 +35,10 @@ def crawl_solar_prices():
 
     return pd.DataFrame(data)
 
-
 df_prices = crawl_solar_prices()
-st.dataframe(df_prices, use_container_width=True)
+st.table(df_prices) #  Thay bằng dòng này
+#df_prices = crawl_solar_prices()
+#st.dataframe(df_prices, use_container_width=True)
 
 # --- PHẦN 2: NHẬP LIỆU TƯ VẤN (BÀN GIAO TIẾP VỚI KHÁCH) ---
 st.header("📋 2. Nhập Thông số Khách hàng")
